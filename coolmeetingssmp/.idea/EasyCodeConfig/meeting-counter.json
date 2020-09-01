@@ -1,0 +1,27 @@
+{
+  "name" : "Counter",
+  "originTableName" : "counter",
+  "comment" : null,
+  "fullColumn" : [ {
+    "name" : "visitcount",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "ktShortType" : "Int",
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "id",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "ktShortType" : "Int",
+    "custom" : false,
+    "ext" : { }
+  } ],
+  "pkColumn" : null,
+  "otherColumn" : null,
+  "savePackageName" : "com.xiaofine.meeting",
+  "savePath" : "./src/main/java/com/xiaofine/meeting",
+  "saveModelName" : "coolmeetingssmp"
+}
