@@ -1,4 +1,4 @@
-!/coolmeeting/target/
 /.idea/
-!/coolmeetingssh/target/
-!/coolmeetingssmp/target/
+/coolmeeting/target/
+/coolmeetingssh/target/
+/coolmeetingssmp/target/
