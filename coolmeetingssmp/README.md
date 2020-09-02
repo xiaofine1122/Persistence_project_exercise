@@ -75,7 +75,16 @@ departmentService.save(department)
 ```
 
 ```
-LambdaQueryChainWrapper<Employee> wrapper = employeeService.lambdaQuery();if(employee.getEmployeename()!=null && employee.getEmployeename().length()>0){    wrapper.eq(Employee::getEmployeename,employee.getEmployeename());}if(employee.getUsername()!=null && employee.getUsername().length()>0){    wrapper.eq(Employee::getUsername,employee.getUsername());}wrapper.eq(Employee::getStatus,employee.getStatus());IPage<Employee> iPage = employeeService.page(new Page<Employee>(page,PAGE_SIZE),wrapper.getWrapper());List<Employee> employees =iPage.getRecords();
+LambdaQueryChainWrapper<Employee> wrapper = employeeService.lambdaQuery();
+if(employee.getEmployeename()!=null && employee.getEmployeename().length()>0){    
+    wrapper.eq(Employee::getEmployeename,employee.getEmployeename());
+}
+if(employee.getUsername()!=null && employee.getUsername().length()>0){    
+    wrapper.eq(Employee::getUsername,employee.getUsername());
+}
+wrapper.eq(Employee::getStatus,employee.getStatus());
+IPage<Employee> iPage = employeeService.page(new Page<Employee>(page,PAGE_SIZE),wrapper.getWrapper());
+List<Employee> employees =iPage.getRecords();
 ```
 
 
